@@ -193,6 +193,20 @@ header a {
   padding: 250px 0px;
 }
 
+header nav .logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+header nav .artist-logo {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
 .artist-section {
   padding: 20px 80px;
 }
