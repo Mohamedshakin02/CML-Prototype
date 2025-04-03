@@ -1,0 +1,237 @@
+@import "./variables";
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: auto;
+    font-family: $inter-font;
+}
+
+header {
+    background-color: #646464;
+    position: sticky;
+    top:0px;
+
+    nav{
+        display: flex;
+        padding: 20px 80px;
+        align-items: center;
+        justify-content: space-between;
+
+        .logo{
+            font-weight: 700;
+            font-size: 48px;
+        }
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        font-size: 24px;
+        font-weight: 600;
+        width: 65%;
+        justify-self: end;
+        justify-content: space-between;
+    }
+
+    a{
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.intro-section{
+    background-color: $banner;
+    height: 90vh;
+    padding: 80px 100px;
+
+    h1{
+        margin: 0%;
+        font-weight: 900;
+        font-size: 128px;
+    }
+
+    p{
+        font-weight: 400;
+        font-size: 24px;
+    }
+
+    button{
+        background-color: $background;
+        border: 0;
+        padding: 10px 30px;
+
+        a{
+            color: black;
+            text-decoration: none;
+            font-size: 32px;
+            font-weight: 800;
+            
+        }
+    }
+
+    .intro-top{
+        width: 52%;
+    }
+
+    .intro-bottom{
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-between;
+
+        
+    }
+}
+
+.about-section{
+    padding: 40px 80px;
+
+    h1{
+        text-align: center;
+        font-weight: 700;
+        font-size: 48px;
+        text-decoration: underline;
+    }
+
+    p{
+        font-size: 30px;
+        font-weight: 400;
+        padding: 0%;
+        margin: 0%;
+    }
+
+    .about-container{
+        display: grid;
+        grid-template-columns: 50% 50%;
+
+        .about-image{
+            background-color: $background;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 50px;
+        }
+    } 
+}
+
+.feature-section{
+    padding: 20px 80px;
+
+    h1{
+        text-align: center;
+        font-weight: 700;
+        font-size: 48px;
+        text-decoration: underline;
+    }
+
+    .feature-container{
+        display: grid;
+        grid-template-columns: 50% 50%;
+
+        .feature-image{
+            background-color: $background;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 48px;
+        }
+
+        .feature-text{
+            color:white;
+            background-color: $background2;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            h2,p{
+                margin: 0%;
+            }
+
+            .product-top{
+                h2{
+                    font-weight: 700;
+                    font-size: 40px;
+                }
+
+                p{
+                   font-size: 32px;
+                   font-weight: 300; 
+                }
+            }
+
+            .product-bottom{
+                margin-top: 150px;
+
+                h2{
+                    font-weight: 700;
+                    font-size: 36px;
+                }
+
+                button{
+                    background-color: $background;
+                    border: 0;
+                    padding: 10px 30px;
+                    margin-top: 10px;
+            
+                    a{
+                        color: black;
+                        text-decoration: none;
+                        font-size: 32px;
+                        font-weight: 800;
+                    }
+                }
+
+
+            }
+        }
+    }
+}
+
+.event-section{
+    padding: 20px 80px;
+
+    h1{
+        text-align: center;
+        font-weight: 700;
+        font-size: 48px;
+        text-decoration: underline;
+    }
+
+    .event-container{
+        display: grid;
+        grid-template-columns: repeat (auto-fit, 1fr);
+        grid-template-areas: 
+        'image-1 image-1'
+        'image-2 image-3'
+        ;
+        gap: 20px;
+
+        .image-1 {
+            grid-area: image-1;
+            
+        }
+
+        .image-2 {
+            grid-area: image-2;
+        }
+
+        .image-3 {
+            grid-area: image-3;
+        }
+
+        .image-1, .image-2, .image-3{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 48px;
+            background-color: $background;
+            padding: 250px 0px;
+        }
+    }
+}
+
