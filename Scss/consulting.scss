@@ -1,0 +1,109 @@
+@import "./variables";
+@import "./index.scss";
+@import "./artist.scss";
+
+
+.services-section {
+    padding: 20px 80px;
+
+    h1{
+        text-align: center;
+        font-weight: 700;
+        font-size: 48px;
+        text-decoration: underline;
+    }
+
+    .services-container{
+        background-color: $background;
+        padding: 100px 80px;
+
+        h1{
+            text-decoration: none;
+            text-align: left;
+        }
+    }
+}
+
+.products-section{
+    padding: 20px 80px;
+
+    h1{
+        text-align: center;
+        font-weight: 700;
+        font-size: 48px;
+        text-decoration: underline;
+    }
+
+
+    .products-container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        grid-template-rows: 470px;
+        
+
+        .product-1, .product-2, .product-3, .product-4{
+            background-color: $background;
+            padding: 20px;
+            
+            .product-image{
+                background-color: #A0A0A0;
+                display: grid;
+                grid-template-rows: 250px;
+
+            }
+        }
+    }
+}
+
+.examples-section{
+    padding: 20px 80px;
+
+    h1{
+        text-align: center;
+        font-weight: 700;
+        font-size: 48px;
+        text-decoration: underline;
+    }
+
+    .examples-container{
+        display: grid;
+        grid-template-columns: 75% 25%;
+        grid-template-areas: 
+        'images side'
+        'desc desc'
+        ;
+        gap:20px;
+
+        .images, .side, .desc{
+            font-size: 48px;
+            background-color: $background;
+            padding: 30px;
+
+            p{
+                margin: 0%;
+            }
+        }
+
+        .images{
+            grid-area: images;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .side{
+            grid-area: side;
+            font-weight: 700;
+            padding-right: 80px;
+            padding-bottom: 150px;
+        }
+
+        .desc{
+            grid-area: desc;
+            font-weight: 700;
+            padding-bottom: 100px;
+        }
+    }
+
+}
