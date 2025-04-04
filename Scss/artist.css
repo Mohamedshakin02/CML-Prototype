@@ -193,6 +193,16 @@ header a {
   padding: 250px 0px;
 }
 
+.contact-section {
+  padding: 20px 80px;
+}
+.contact-section h1 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 48px;
+  text-decoration: underline;
+}
+
 header nav .logo {
   display: flex;
   align-items: center;
