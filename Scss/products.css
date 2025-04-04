@@ -652,7 +652,7 @@ header nav .artist-logo {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
-  grid-template-rows: 400px;
+  grid-template-rows: 470px;
 }
 .products-section .products-container .product-1, .products-section .products-container .product-2, .products-section .products-container .product-3, .products-section .products-container .product-4 {
   background-color: #D9D9D9;

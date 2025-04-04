@@ -152,7 +152,7 @@ header a {
 .feature-section .feature-container .feature-text .product-bottom button {
   background-color: #D9D9D9;
   border: 0;
-  padding: 10px 30px;
+  padding: 20px 80px;
   margin-top: 10px;
 }
 .feature-section .feature-container .feature-text .product-bottom button a {
@@ -173,7 +173,7 @@ header a {
 }
 .event-section .event-container {
   display: grid;
-  grid-template-columns: repeat auto-fit, 1fr;
+  grid-template-columns: repeat(auto-fit, 1fr);
   grid-template-areas: "image-1 image-1" "image-2 image-3";
   gap: 20px;
 }
