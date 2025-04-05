@@ -228,6 +228,7 @@ header a {
   background-color: #8F8F8F;
   color: white;
   padding: 15px 0px;
+  cursor: pointer;
 }
 .contact-section .contact-bottom {
   display: flex;
